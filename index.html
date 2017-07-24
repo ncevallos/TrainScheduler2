@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Train Scheduler App</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/java.js"></script>
+
+  </head>
+  <body>
+  <div class="jumbotron text-center ß">
+  <h1>Train Schedules</h1>
+  <p>Chugga Chugga Choo Choo</p>
+  </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+          <div id="tablePanel" class="  panel   panel-primary form-group">
+            <div class="panel-heading">Search Parameters
+            </div>
+<table class=" table table-hover" id="trainTable">
+    <tr>
+    <th class="tableHeadings">Train Name</th>
+    <th class="tableHeadings">Destination</th> 
+    <th class="tableHeadings">Frequency (min)</th>
+    <th class="tableHeadings">Next Arrival</th>
+    <th class="tableHeadings">Minutes Away</th>
+  </tr></table>
+  </div>
+  </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div id="searchPanel" class="  panel panel-primary   form-group">
+            <div class="panel-heading">
+              Add A Train
+            </div>
+            <div class="panel-body">
+  <form>
+  <div class="form-group">
+    <label for="trainName">Train Name</label>
+    <input type="text" class="form-control" id="trainName" placeholder="Train Name">
+  </div>
+  <div class="form-group">
+    <label for="destination">Destination</label>
+    <input type="text" class="form-control" id="Tdestination" placeholder="Destination">
+  </div>
+  <div class="form-group">
+    <label for="firstTrainTime">First Train Time(HH:mm Military Time)</label>
+    <input type="text" class="form-control" id="firstTime" placeholder="HH:MM Military Time">
+  </div>
+  <div class="form-group">
+    <label for="frequency">Frequency (min)</label>
+    <input type="text" class="form-control" id="Tfrequency" placeholder="Frequency">
+  </div>
+
+
+  <button type="submit" class="btn btn-default btn-primary " id="submitButton">Submit</button>
+</form>
+  </div>
+  </div>
+  </div>
+
+
+
+
+  </body>
+</html>
